@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Poppins:wght@300;400&family=Roboto:ital,wght@0,100;0,400;1,400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    width: 100vw;
+    height: 100vh;
+    font-size: 62.5%;
+}
+
+body{
+    font-family: 'Lato', sans-serif;
+    background: linear-gradient(rgba(17, 17, 17, 0.8), rgba(20, 20, 20, 1)), url(./img/treino.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    
+}
+
+.menu-content{
+    height: 7vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.8rem;
+    color: #fff;
+    margin-top: 20px;
+}
+
+.logo{
+    font-size: 1.8rem;
+    letter-spacing: 0.4rem;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 30px;
+
+}
+
+li a{
+    color: #fff;
+    text-decoration: none;
+    
+    padding: 1.5rem;
+    transform: 2ms ease-in;
+    position: relative;
+}
+
+li a::before{
+    position: absolute;
+    content: '';
+    bottom: 0px;
+    left: 0px;
+    width: 0px;
+    height: 1px;
+    background-color: rgb(251, 255, 0);
+    transition: all 1.5s ease;
+
+}
+
+li a:hover:before{
+    width: 100%;
+}
+
+/* conteudo*/
+
+main{
+    height: 93vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.man-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.primary-text{
+    width: 850px;
+    color: #fff;
+    font-size: 5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.second-text{
+    text-align: center;
+    color: rgb(165, 165, 165);
+    font-size: 3rem;
+    margin-bottom: 3rem;
+}
+
+.btns{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+
+}
+
+.btns button{
+    width: 200px;
+    height: 75px;
+    border-radius: 20px;
+    background-color: transparent;
+    color: #fff;
+    font-weight: bold;
+    border: 1px solid rgb(251, 255, 0);
+    cursor: pointer;
+    text-transform: uppercase;
+    position: relative;
+    transition: 1.5s;
+}
+
+.btns button::before{
+    content: ' ';
+    position: absolute;
+    width: 0;
+    height: 75px;
+    left: 0;
+    bottom: 0;
+    border-radius: 20px;
+    transition: 1s;
+    background-color: rgba(165, 165, 165, 0.514);
+
+}
+
+
+  
+
+
+.btns button:hover:before{
+    width: 100%;
+    color: rgb(251, 255, 0);
+    border: none;
+    
+
+}
+
+
+
+
+
